@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+  <header class="header">
+  <a href="#" target="_blank" class="logo">CCTV Based Auto Attendence System</a>
+  <nav class="navbar">
+  <ul class="navbar-list">
+    <li><a href="#" class="navbar-link"> collect data </a></li>
+  </ul>
+    <label for="Date">Date</label>
+		<input name="Date" type="text" required placeholder="Date"/>
+		<br>
+		<label for="Compare">Enter </label>
+		<input name="compare" type="text" required placeholder="Compare"/>
+  </nav>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["January", "Ferbuary", "March", "May", "June"];
+var yValues = [50, 40, 30, 20, 10];
+var barColors = ["blue", "blue", "blue", "blue", "blue"];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [8,15,25,30,40],
+      borderColor: "orange",
+      fill: false
+    }, { 
+      data: [17,19,20,40,50],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [25,35,30,20,10],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script> 
+ <section class="attendance">
+  <div class="attendance-list">
+    <h1>Attendance List</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Registration Number</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Join Time</th>
+          <th>Exit Time</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>201041310..</td>
+          <td>Hemant kumar</td>
+          <td>h....@gmail.com</td>
+          <td>17-02-24</td>
+          <td>10:00AM</td>
+          <td>4:00PM</td>
+          <td><button>View</button></td>
+        </tr>
+        <tr>
+          <td>201041310..</td>
+          <td>Rajeev Kumar</td>
+          <td>r....@gmail.com</td>
+          <td>17-02-24</td>
+          <td>10:00AM</td>
+          <td>4:00PM</td>
+          <td><button>View</button></td>
+        </tr>
+        <tr>
+          <td>20104131052</td>
+          <td>Ekta Kumari</td>
+          <td>e....@gmail.com</td>
+          <td>17-02-24</td>
+          <td>10:00AM</td>
+          <td>4:00PM</td>
+          <td><button>View</button></td>
+        </tr>
+        <tr>
+          <td>20104131040</td>
+          <td>Laxmi Kumari</td>
+          <td>l....@gmail.com</td>
+          <td>17-02-24</td>
+          <td>10:00AM</td>
+          <td>4:00PM</td>
+          <td><button>View</button></td>
+        </tr>
+         <tr >
+          <td>201041310..</td>
+          <td>Vishal Kumar</td>
+          <td>v....@gmail.com</td>
+          <td>17-02-24</td>
+          <td>10:00AM</td>
+          <td>4:00PM</td>
+          <td><button>View</button></td>
+        </tr>
+        <tr >
+          <td>201041310..</td>
+          <td>Rahul Kumar</td>
+          <td>r....@gmail.com</td>
+          <td>17-02-24</td>
+          <td>10:00AM</td>
+          <td>4:00PM</td>
+          <td><button>View</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</span>
+
+
+</section>
+</div>
+
+</body>
+</html>
+</span>
+<div
